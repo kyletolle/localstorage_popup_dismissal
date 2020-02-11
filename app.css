@@ -1,0 +1,72 @@
+/* Followed examples for styling from
+https://www.cssscript.com/basic-modal-popup-with-vanilla-javascript-and-html5-modalzinha-js/
+and
+https://chrisbracco.com/a-simple-css-popup/
+*/
+
+html {
+    box-sizing: border-box;
+    text-align: center;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/** Custom popup **/
+
+/* Position popup above the element */
+.popup {
+    position: absolute;
+    top: 52px;
+    left: 128px;
+    margin-bottom: 5px;
+    padding: 7px;
+    width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+
+    /* Visible by default */
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup--hide {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Triangle hack to make popup look like a speech bubble */
+.popup__triangle {
+    position: relative;
+    left: 50%;
+    bottom: -12px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Something that looks like a new feature to call out. */
+.card {
+    margin: 100px;
+    padding: 10px;
+    border: 10px solid darkslategrey;
+    border-radius: 20px;
+    background-color: lightslategrey;
+    color: whitesmoke;
+    max-width: 200px;
+    max-height: 200px;
+}
