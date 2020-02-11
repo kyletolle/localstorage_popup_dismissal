@@ -4,7 +4,11 @@ This project explores how to use LocalStorage to remember whether a popup was di
 
 There's also a button that makes clearing LocalStorage quick and easy.
 
-## Running
+## Demo
+
+Visit https://kyletolle.github.io/localstorage_popup_dismissal/ for a live demo.
+
+## Running Locally
 
 Start a HTTP server in the project's folder with
 
@@ -13,3 +17,5 @@ ruby -run -e httpd . -p 8000
 ```
 
 Then visit http://localhost:8000 in your browser.
+
+Note: You cannot access LocalStorage via the `file://` protocol.
